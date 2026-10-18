@@ -7,3 +7,5 @@ class CVE(SQLModel, table=True):
     description: str
     cvss_score: float | None = None
     published: datetime | None = None
+    in_kev : bool = Field(default=False)
+    epss_score: float | None = None
